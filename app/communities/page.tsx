@@ -1,7 +1,3 @@
-
-// export default function Page() {
-//     return <p>Communities Page</p>;
-// }
 // page.tsx
 import Tabs from '@/app/ui/communities/table';
 import { communities } from '@/app/lib/data';

@@ -14,4 +14,5 @@ export type Community = {
   name: string;
   image_url: string;
   members_count: number;
+  slug: string;
 };
