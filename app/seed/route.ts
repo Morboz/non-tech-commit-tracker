@@ -72,8 +72,6 @@ export async function GET() {
     await client.sql`ROLLBACK`;
     //log the error
     console.error(error);
-    // stack trace
-    console.error(error.stack);
     return Response.json({ error }, { status: 500 });
   }
 }
