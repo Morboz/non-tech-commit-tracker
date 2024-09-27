@@ -9,6 +9,9 @@ type CommunityGridProps = {
 };
 
 const CommunityGrid: React.FC<CommunityGridProps> = ({ communities }) => {
+  const formatNumber = (number: number) => {
+    return new Intl.NumberFormat('en-US').format(number);
+  };
   return (
     <div className="p-4">
       <h1 className="text-2xl font-bold mb-4">Communities</h1>
@@ -24,11 +27,11 @@ const CommunityGrid: React.FC<CommunityGridProps> = ({ communities }) => {
               {community.name}
             </p>
             <p className="mt-2 text-center text-gray-600">
-              Members: {community.members_count}
+            Members: {formatNumber(community.members_count)}
             </p>
             <div className="mt-4 text-center">
-              <Link href={`/community/${community.slug}`} className="inline-block px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">
-                  加入
+              <Link href={`/${community.slug}`} className="inline-block px-4 py-2 border border-gray-700 text-gray-700 rounded-full hover:bg-gray-100">
+                加入
               </Link>
             </div>
           </div>

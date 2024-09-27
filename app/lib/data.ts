@@ -4,17 +4,17 @@ import { Community } from './definitions';
 export const communities: Community[] = [
   {
     id: '1',
-    name: 'Community One',
-    image_url: '/avatar1.svg',
-    members_count: 100,
-    slug: 'community-one'
+    name: 'Solar',
+    image_url: '/solar.svg',
+    members_count: 500,
+    slug: 'solar'
   },
   {
     id: '2',
-    name: 'Community Two',
-    image_url: '/avatar2.svg',
-    members_count: 200,
-    slug: 'community-two'
+    name: '706',
+    image_url: '/706.svg',
+    members_count: 130000,
+    slug: '706'
   },
   // 添加更多社区数据
 ];
