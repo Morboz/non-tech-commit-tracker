@@ -3,7 +3,7 @@
 import { useState } from 'react';
 
 export default function Page({ params }: { params: { slug: string } }) {
-  const slug = params.slug;
+  console.log('params:', params);
   const [inputValue, setInputValue] = useState('');
   const [showPopup, setShowPopup] = useState(false);
 

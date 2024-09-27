@@ -3,6 +3,7 @@
 
 import { Community } from '@/app/lib/definitions';
 import Link from 'next/link';
+import Image from 'next/image';
 
 type CommunityGridProps = {
   communities: Community[];
@@ -18,7 +19,7 @@ const CommunityGrid: React.FC<CommunityGridProps> = ({ communities }) => {
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
         {communities.map((community) => (
           <div key={community.slug} className="p-4 border rounded-lg shadow-md">
-            <img
+            <Image
               src={community.image_url}
               alt={community.name}
               className="w-32 h-32 object-cover rounded-full mx-auto"
