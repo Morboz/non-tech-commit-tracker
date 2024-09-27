@@ -12,7 +12,6 @@ export const users = [
 
 export const communities = [
   {
-    id: '1',
     name: 'JavaScript',
     image_url: 'https://placekitten.com/200/200',
     members_count: 1024,
