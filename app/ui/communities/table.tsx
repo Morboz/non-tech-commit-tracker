@@ -23,6 +23,8 @@ const CommunityGrid: React.FC<CommunityGridProps> = ({ communities }) => {
               src={community.image_url}
               alt={community.name}
               className="w-32 h-32 object-cover rounded-full mx-auto"
+              width={100}
+              height={100}
             />
             <p className="mt-4 text-center text-xl font-semibold">
               {community.name}
